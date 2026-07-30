@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="images/repository-banner.png" alt="Quantum Optimization and Simulation Labs" width="100%">
+  <img src="images/banner.png" alt="Quantum Optimization and Simulation Labs" width="100%">
 </p>
 
 # Quantum Optimization and Simulation Labs
