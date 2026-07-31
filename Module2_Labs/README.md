@@ -13,3 +13,7 @@ Exercises: Shot noise impact, warm-start comparison
 Lab 8	QAOA for Portfolio Optimization (Real Stock Data) (M2 Appl.;	Simulator + Real HW)
 yfinance stock data (AAPL/MSFT/TSLA/JPM/JNJ); correlation matrix; weighted Max-Cut graph; QAOA portfolio recommendation  
 Exercises: Threshold sensitivity analysis
+
+* Labs 6–7 have optimization loops that take 1–3 minutes each.
+•	All labs default to USE_REAL_HARDWARE = False. Students flip that flag once they have an IBM Quantum API token.
+•	Lab 8 falls back to synthetic data automatically if Yahoo Finance is unreachable in the classroom.
