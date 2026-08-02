@@ -30,5 +30,6 @@ The notebooks install Qiskit 2.x-era packages in Colab. Real-hardware execution 
 Lab 5 builds QAOA from the gates up first—including the six CX–RZ(-?)–CX cost blocks—and only afterward compares it with Qiskit's high-level QAOA implementation. Lab 7 defaults to Aer and keeps IBM hardware as an optional section. Lab 8 uses four hypothetical assets and an exactly-two-assets constraint, avoiding dependence on live financial data. 
 
 References:
-1. Quantum approximate optimization algorithm | IBM Quantum Documentation, https://quantum.cloud.ibm.com/docs/en/tutorials/quantum-approximate-optimization-algorithm
-2. QAOA Lab, IBM, https://quantum.cloud.ibm.com/learning/en/courses/utility-scale-quantum-computing/variational-quantum-algorithms#3-quantum-optimization-with-qiskit-patterns
+1. Variational Quantum Algorithms, IBM, https://quantum.cloud.ibm.com/learning/en/courses/utility-scale-quantum-computing/variational-quantum-algorithms
+2. Quantum approximate optimization algorithm | IBM Quantum Documentation, https://quantum.cloud.ibm.com/docs/en/tutorials/quantum-approximate-optimization-algorithm
+3. QAOA Lab, IBM, https://quantum.cloud.ibm.com/learning/en/courses/utility-scale-quantum-computing/variational-quantum-algorithms#3-quantum-optimization-with-qiskit-patterns
