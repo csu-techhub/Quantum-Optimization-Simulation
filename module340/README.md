@@ -25,3 +25,4 @@ The real-hardware section is optional and may require minor API updates dependin
 References:
 1. VQE tutorial, IBM, https://quantum.cloud.ibm.com/learning/en/modules/computer-science/vqe
 2. VQE lab, IBM, https://quantum.cloud.ibm.com/learning/en/courses/utility-scale-quantum-computing/quantum-simulation
+3. PennyLane Blog on Chemistry, https://pennylane.ai/search?categories=quantum+chemistry&sort=publication_date&contentType=BLOG
