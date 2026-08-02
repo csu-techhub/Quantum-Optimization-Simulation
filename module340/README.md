@@ -21,3 +21,7 @@ Each notebook contains:
 - collapsible instructor solutions.
 
 The real-hardware section is optional and may require minor API updates depending on the IBM Runtime version and available backends when the course runs.
+
+References:
+1. VQE tutorial, IBM, https://quantum.cloud.ibm.com/learning/en/modules/computer-science/vqe
+2. VQE lab, IBM, https://quantum.cloud.ibm.com/learning/en/courses/utility-scale-quantum-computing/quantum-simulation
