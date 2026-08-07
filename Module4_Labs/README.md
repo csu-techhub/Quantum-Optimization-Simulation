@@ -56,17 +56,9 @@ A noisy result should not be expected to match the ideal simulator exactly.
 
 A useful mental model is
 
-\[
-\text{measured result}
-\approx
-\text{ideal result}
-+
-\text{systematic noise bias}
-+
-\text{sampling fluctuation}.
-\]
+$\text{measured result}\approx\text{ideal result}+\text{systematic noise bias}+\text{sampling fluctuation}.$
 
-Increasing shots reduces sampling fluctuation approximately as \(1/\sqrt{N_{\rm shots}}\), but it does not by itself remove gate, decoherence, or readout errors. QLab4 demonstrates this directly. The notebooks also mention circuit optimization and more advanced error-mitigation ideas without making them required material.
+Increasing shots reduces sampling fluctuation approximately as $1/\sqrt{N_{\rm shots}}$, but it does not by itself remove gate, decoherence, or readout errors. QLab4 demonstrates this directly. The notebooks also mention circuit optimization and more advanced error-mitigation ideas without making them required material.
 
 ## Optional real IBM Quantum hardware
 
