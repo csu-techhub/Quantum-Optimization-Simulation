@@ -8,13 +8,13 @@ The labs are designed for learners who are **not necessarily STEM professionals*
 
 | Lab | Topic | Main idea |
 |---|---|---|
-| **QLab1** | Python, Colab, NumPy, and Qiskit refresher | Minimal Python/NumPy/Qiskit skills needed later |
-| **QLab2** | Pauli operators and Pauli rotations | Connect matrices, circuits, and `AerSimulator` |
-| **QLab3** | Pauli measurements and energy reconstruction | Build an energy from Z/X/Y measurement settings |
-| **QLab4** | From energy estimation to VQE optimization | Use the **same two-qubit circuit as QLab3**, optimize with COBYLA, then study fake-device noise |
-| **QLab5** | Complete four-qubit H₂ VQE | Jordan–Wigner mapping, paired double excitation, PySCF Hamiltonian, COBYLA |
-| **QLab6** | H₂ potential-energy curve and bond length | Repeat VQE over geometry; fake-device noise and optional hardware |
-| **QLab7 (optional)** | Small materials-model VQE | Apply the VQE workflow to a transverse-field Ising model |
+| **Lab08** | Python, Colab, NumPy, and Qiskit refresher | Minimal Python/NumPy/Qiskit skills needed later |
+| **Lab09** | Pauli operators and Pauli rotations | Connect matrices, circuits, and `AerSimulator` |
+| **Lab10** | Pauli measurements and energy reconstruction | Build an energy from Z/X/Y measurement settings |
+| **Lab11** | From energy estimation to VQE optimization | Use the **same two-qubit circuit as QLab3**, optimize with COBYLA, then study fake-device noise |
+| **Lab12** | Complete four-qubit H₂ VQE | Jordan–Wigner mapping, paired double excitation, PySCF Hamiltonian, COBYLA |
+| **Lab13** | H₂ potential-energy curve and bond length | Repeat VQE over geometry; fake-device noise and optional hardware |
+| **Lab14 (optional)** | Small materials-model VQE | Apply the VQE workflow to a transverse-field Ising model |
 
 ## Common notebook style
 
@@ -34,19 +34,19 @@ Qiskit displays bitstrings in `q_(n-1)...q_0` order. When the chemistry discussi
 
 The series intentionally introduces execution realism gradually.
 
-- **QLab1–2:** basic `AerSimulator` use.
-- **QLab3:** finite-shot Pauli measurements and energy reconstruction.
-- **QLab4:** COBYLA optimization using the same measured-energy method, followed by a fake IBM-device noise model. A shot-count experiment demonstrates that more shots reduce random variation but do not remove systematic hardware-noise bias. Real IBM hardware is optional.
-- **QLab5:** full four-qubit H₂ VQE using `EstimatorV2`.
-- **QLab6:** geometry optimization is performed with ideal simulation first; fake-device noise and optional real hardware are then demonstrated at one selected geometry rather than over the entire curve.
-- **QLab7:** optional application to a small materials/condensed-matter model.
+- **Lab08-09:** basic `AerSimulator` use.
+- **Lab10:** finite-shot Pauli measurements and energy reconstruction.
+- **Lab11:** COBYLA optimization using the same measured-energy method, followed by a fake IBM-device noise model. A shot-count experiment demonstrates that more shots reduce random variation but do not remove systematic hardware-noise bias. Real IBM hardware is optional.
+- **Lab12:** full four-qubit H₂ VQE using `EstimatorV2`.
+- **Lab13:** geometry optimization is performed with ideal simulation first; fake-device noise and optional real hardware are then demonstrated at one selected geometry rather than over the entire curve.
+- **Lab14:** optional application to a small materials/condensed-matter model.
 
 ## Circuit-execution counters
 
-QLab3–QLab6 print an execution count so learners can see that hybrid algorithms may require many quantum evaluations.
+Lab10–Lab13 print an execution count so learners can see that hybrid algorithms may require many quantum evaluations.
 
-- In **QLab3–QLab4**, the counter records the measurement circuits explicitly executed. One energy estimate uses three measurement settings (Z, X, and Y).
-- In **QLab5–QLab6**, the counter records `EstimatorV2` energy-evaluation requests. A primitive may internally use more than one physical measurement circuit to estimate an observable.
+- In **Lab10–Lab11**, the counter records the measurement circuits explicitly executed. One energy estimate uses three measurement settings (Z, X, and Y).
+- In **Lab12–Lab13**, the counter records `EstimatorV2` energy-evaluation requests. A primitive may internally use more than one physical measurement circuit to estimate an observable.
 
 This distinction is stated inside the notebooks.
 
@@ -70,7 +70,7 @@ Increasing shots reduces sampling fluctuation approximately as \(1/\sqrt{N_{\rm 
 
 ## Optional real IBM Quantum hardware
 
-QLab4 and QLab6 contain optional IBM Runtime templates.
+Lab11 and Lab13 contain optional IBM Runtime templates.
 
 These sections may require:
 
