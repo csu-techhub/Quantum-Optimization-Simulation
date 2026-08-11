@@ -91,6 +91,10 @@ pyscf ~= 2.8
 
 ## References
 
-1. IBM Quantum Learning — VQE: https://quantum.cloud.ibm.com/learning/en/modules/computer-science/vqe
-2. IBM Quantum documentation — Qiskit Runtime and V2 primitives: https://quantum.cloud.ibm.com/docs/
-3. Qiskit Nature documentation: https://qiskit-community.github.io/qiskit-nature/
+1. VQE tutorial, IBM, https://quantum.cloud.ibm.com/learning/en/modules/computer-science/vqe
+2. VQE lab, IBM, https://quantum.cloud.ibm.com/learning/en/courses/utility-scale-quantum-computing/quantum-simulation
+3. VQE course, IBM, https://quantum.cloud.ibm.com/learning/en/courses/quantum-chem-with-vqe
+4. VQE module, IBM, https://quantum.cloud.ibm.com/learning/en/modules/computer-science/vqe
+4. PennyLane Blog on Chemistry, https://pennylane.ai/search?categories=quantum+chemistry&sort=publication_date&contentType=BLOG
+5. PennyLane VQE tutorial, https://pennylane.ai/demos/tutorial_vqe/
+6. BlueQubit VQE tutorial, https://app.bluequbit.io/tutorial/vqe-tutorial
