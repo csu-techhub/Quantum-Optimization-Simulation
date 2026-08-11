@@ -9,9 +9,9 @@ The labs are designed for learners who are **not necessarily STEM professionals*
 | Lab | Topic | Main idea |
 |---|---|---|
 | **Lab08** | Python, Colab, NumPy, and Qiskit refresher | Minimal Python/NumPy/Qiskit skills needed later |
-| **Lab09** | Pauli operators and Pauli rotations | Connect matrices, circuits, and `AerSimulator` |
-| **Lab10** | Pauli measurements and energy reconstruction | Build an energy from Z/X/Y measurement settings |
-| **Lab11** | From energy estimation to VQE optimization | Use the **same two-qubit circuit as QLab3**, optimize with COBYLA, then study fake-device noise |
+| **Lab09** | Pauli measurements and energy reconstruction | Build an energy from Z/X/Y measurement settings |
+| **Lab10** | From energy estimation to VQE optimization | Use the **same two-qubit circuit as QLab3**, optimize with COBYLA, then study fake-device noise |
+| **Lab11** | Pauli operators and Pauli rotations | Connect matrices, circuits, and `AerSimulator` |
 | **Lab12** | Complete four-qubit H₂ VQE | Jordan–Wigner mapping, paired double excitation, PySCF Hamiltonian, COBYLA |
 | **Lab13** | H₂ potential-energy curve and bond length | Repeat VQE over geometry; fake-device noise and optional hardware |
 | **Lab14 (optional)** | Small materials-model VQE | Apply the VQE workflow to a transverse-field Ising model |
@@ -34,18 +34,19 @@ Qiskit displays bitstrings in `q_(n-1)...q_0` order. When the chemistry discussi
 
 The series intentionally introduces execution realism gradually.
 
-- **Lab08-09:** basic `AerSimulator` use.
-- **Lab10:** finite-shot Pauli measurements and energy reconstruction.
-- **Lab11:** COBYLA optimization using the same measured-energy method, followed by a fake IBM-device noise model. A shot-count experiment demonstrates that more shots reduce random variation but do not remove systematic hardware-noise bias. Real IBM hardware is optional.
+- **Lab08:** basic `AerSimulator` use.
+- **Lab09:** finite-shot Pauli measurements and energy reconstruction.
+- **Lab10:** COBYLA optimization using the same measured-energy method, followed by a fake IBM-device noise model. A shot-count experiment demonstrates that more shots reduce random variation but do not remove systematic hardware-noise bias. Real IBM hardware is optional.
+- **Lab11:** `AerSimulator` use.
 - **Lab12:** full four-qubit H₂ VQE using `EstimatorV2`.
 - **Lab13:** geometry optimization is performed with ideal simulation first; fake-device noise and optional real hardware are then demonstrated at one selected geometry rather than over the entire curve.
 - **Lab14:** optional application to a small materials/condensed-matter model.
 
 ## Circuit-execution counters
 
-Lab10–Lab13 print an execution count so learners can see that hybrid algorithms may require many quantum evaluations.
+Lab09–Lab13 print an execution count so learners can see that hybrid algorithms may require many quantum evaluations.
 
-- In **Lab10–Lab11**, the counter records the measurement circuits explicitly executed. One energy estimate uses three measurement settings (Z, X, and Y).
+- In **Lab09–Lab10**, the counter records the measurement circuits explicitly executed. One energy estimate uses three measurement settings (Z, X, and Y).
 - In **Lab12–Lab13**, the counter records `EstimatorV2` energy-evaluation requests. A primitive may internally use more than one physical measurement circuit to estimate an observable.
 
 This distinction is stated inside the notebooks.
@@ -62,7 +63,7 @@ Increasing shots reduces sampling fluctuation approximately as $1/\sqrt{N_{\rm s
 
 ## Optional real IBM Quantum hardware
 
-Lab11 and Lab13 contain optional IBM Runtime templates.
+Lab10 and Lab13 contain optional IBM Runtime templates.
 
 These sections may require:
 
