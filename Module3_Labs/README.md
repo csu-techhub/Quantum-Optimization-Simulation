@@ -11,9 +11,10 @@ The labs are designed for learners who are **not necessarily STEM professionals*
 | **Lab08** | Python, Colab, NumPy, and Qiskit refresher | Minimal Python/NumPy/Qiskit skills needed later |
 | **Lab09** | Pauli measurements and energy reconstruction | Build an energy from Z/X/Y measurement settings |
 | **Lab10** | From energy estimation to VQE optimization | Use the **same two-qubit circuit as QLab3**, optimize with COBYLA, then study fake-device noise |
-| **Lab12** | (in Module 4 Labs) |
-| **Lab13** | (in Module 4 Labs) |
-| **Lab14** | (in Module 4 Labs) |
+| **Lab11** | Pauli operators and Pauli rotations | Connect matrices, circuits, and `AerSimulator` |
+| **Lab12** | Complete four-qubit H₂ VQE | Jordan–Wigner mapping, paired double excitation, PySCF Hamiltonian, COBYLA |
+| **Lab13** | H₂ potential-energy curve and bond length | Repeat VQE over geometry; fake-device noise and optional hardware |
+| **Lab14 (optional)** | Small materials-model VQE | Apply the VQE workflow to a transverse-field Ising model |
 
 ## Common notebook style
 
